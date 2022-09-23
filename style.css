@@ -1,0 +1,69 @@
+body {
+	background: #E5E5E5;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	height: 100vh;
+}
+
+.logo-topo {
+	margin: 40px 0 0 84px;
+	height: 3em;
+	width: auto;
+}
+
+main {
+	margin: 80px 0 40px 17%;
+}
+
+textarea {
+	resize: none;
+}
+
+label {
+	display: block;
+	margin: auto 0 auto 0;
+}
+
+.input-usuario {
+	width: 47%;
+	height: 50vh;
+	padding: 0.5em;
+	background-color: #E5E5E5;
+	border-color: #E5E5E5;
+	border-radius: 1.5em;
+	font-size: 2em;
+	color: #0A3871;
+}
+
+.input-usuario::placeholder {
+	color: #0A3871;
+}
+
+.botao {
+	display: inline-block;
+	width: 23%;
+	padding: 1.5em;
+	margin: 0 1.5em 0 0;
+	border-radius: 1.5em;
+	border-color: #0A3871;
+}
+
+#botao-criptografar {
+	background: #0A3871;
+	color: #FFFFFF;
+}
+
+#botao-descriptografar {
+	background: #D8DFE8;
+	color: #0A3871;
+}
+
+.texto-resultado {
+	position: absolute;
+	width: 28%;
+	margin: 40px 40px 40px;
+	background-color: white;
+	border-color: white;
+	border-radius: 1.5em;
+}

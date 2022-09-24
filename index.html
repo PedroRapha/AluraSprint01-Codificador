@@ -19,11 +19,21 @@
 	<main>
 		<textarea class="input-usuario" placeholder="Digite seu texto"></textarea>
 
-		<label for="botao-criptografar"><img src="elements/exclamacao.png">  Apenas letras minúsculas e sem acento.</label>
+		<div class="label-do-botao">
+			<img src="elements/exclamacao.png">
+			<label for="botao-criptografar">Apenas letras minúsculas e sem acento.</label>
+		</div>
 		<input type="button" id="botao-criptografar" value="Criptografar" class="botao">
 		<input type="button" id="botao-descriptografar" value="Descriptografar" class="botao">
 
-		<textarea class="texto-resultado" placeholder="A implantar no javascript"></textarea>
+		<div class="caixa-resultado">
+			<textarea class="textarea-resultado" readonly></textarea>
+			<div class="elementos-resultado">
+				<img src="elements/imagem-sem-texto.png">
+				<h2>Nenhuma mensagem encontrada</h2>
+				<p>Digite um texto que você deseja criptografar ou descriptografar</p>
+			</div>
+		</div>
 	</main>
 
 	<footer>

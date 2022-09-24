@@ -23,8 +23,8 @@
 			<img src="elements/exclamacao.png">
 			<label for="botao-criptografar">Apenas letras minúsculas e sem acento.</label>
 		</div>
-		<input type="button" id="botao-criptografar" value="Criptografar" class="botao">
-		<input type="button" id="botao-descriptografar" value="Descriptografar" class="botao">
+		<input type="button" id="botaoCriptografar" value="Criptografar" class="botao">
+		<input type="button" id="botaoDescriptografar" value="Descriptografar" class="botao">
 
 		<div class="caixa-resultado">
 			<textarea class="textarea-resultado" readonly></textarea>
@@ -35,6 +35,47 @@
 			</div>
 		</div>
 	</main>
+
+	<script>
+		function criptografar() {
+
+			const textoOriginal = input.value;
+			var textoCriptografado = textoOriginal;
+
+			var vogalOrigem = ["e" , "i" , "a" , "o" , "u"]
+			var vogalDestino = ["enter" , "imes" , "ai" ,  "ober" , "ufat"]
+
+			for (var posicao = 0; posicao <= 4; posicao++) {
+				textoCriptografado = textoCriptografado.replace(vogalOrigem[posicao], vogalDestino[posicao]);
+			}
+			return textoCriptografado;
+		}
+
+		//O código já encripta a primeira letra. Preciso descobrir como encriptar várias de uma vez e também fazer a figura sumir quando tem texto
+
+		function preencheResultado() {
+
+			resultado.value = criptografar();
+
+		}
+
+		var input = document.querySelector(".input-usuario");
+		var resultado = document.querySelector(".textarea-resultado");
+		var botaoCriptografa = document.querySelector("#botaoCriptografar");
+		var botaoDescriptografa = document.querySelector("#botaoDescriptografar");
+		
+		botaoCriptografa.onclick = preencheResultado;
+		
+
+		/*
+	As "chaves" de criptografia que utilizaremos são:
+		`A letra "e" é convertida para "enter"`
+		`A letra "i" é convertida para "imes"`
+		`A letra "a" é convertida para "ai"`
+		`A letra "o" é convertida para "ober"`
+		`A letra "u" é convertida para "ufat"`
+	*/
+	</script>
 
 	<footer>
 		<p class="texto-rodape">Designed by Alura - Developed by Pedro Raphael Paiva</p>

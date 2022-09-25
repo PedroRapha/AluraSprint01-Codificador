@@ -92,6 +92,17 @@
 
 		}
 
+		function selecionaTexto() {
+			input.focus();
+			input.select();
+		}
+
+		function copiaResultado() {
+			let copyText = document.querySelector(".textarea-resultado");
+			copyText.select();
+			document.execCommand("copy");
+		}
+
 		var input = document.querySelector(".input-usuario");
 		var resultado = document.querySelector(".textarea-resultado");
 		var botaoCriptografa = document.querySelector("#botaoCriptografar");
@@ -99,6 +110,8 @@
 		
 		botaoCriptografa.onclick = mostraCriptografar;
 		botaoDescriptografa.onclick = mostraDescriptografar;
+		input.onclick = selecionaTexto;
+		botaoCopiar.onclick = copiaResultado;
 		
 	</script>
 

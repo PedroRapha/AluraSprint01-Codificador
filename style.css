@@ -111,6 +111,7 @@ label {
 }
 
 .elementosResultado {
+	visibility: visible;
 	position: absolute;
 	width: 28vw;
 	margin: auto 0 auto;
@@ -140,9 +141,25 @@ label {
 }
 
 #botaoCopiar {
+	visibility: hidden;
 	position: absolute;
 	margin-top: -4.5em;
 	right: calc(40px + 1vw);
+	background: white;
+	color: #0A3871;
+	transition: 0.5s;
+}
+
+#botaoCopiar:hover {
+	background: #D8DFE8;
+	cursor: pointer;
+}
+
+#botaoCopiar:active {
+	background: darkgray;
+	box-shadow: inset 3px 3px 0 2px #898F95;
+	cursor: pointer;
+	transition: 0s;
 }
 
 

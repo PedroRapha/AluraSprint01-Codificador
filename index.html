@@ -28,7 +28,7 @@
 
 		<div class="caixa-resultado">
 			<textarea class="textarea-resultado" readonly></textarea>
-			<div class="elementosResultado">
+			<div class="elementosResultado" id="elementos-resultado">
 				<img src="elements/imagem-sem-texto.png">
 				<h2>Nenhuma mensagem encontrada</h2>
 				<p>Digite um texto que você deseja criptografar ou descriptografar</p>
@@ -39,12 +39,17 @@
 	</main>
 
 	<script>
-/*		function sumirPlaceholder() {
+		function trocarVisibilidadePlaceholderBotaoCopiar() {
 
-			document.getElementsByClassName('elementosResultado').style.visibility = 'hidden';
-			
+			if(resultado.value == '') {
+				document.getElementById('elementos-resultado').style.visibility = 'visible';
+				document.getElementById('botaoCopiar').style.visibility = 'hidden';
+			} else {
+				document.getElementById('elementos-resultado').style.visibility = 'hidden';
+				document.getElementById('botaoCopiar').style.visibility = 'visible';
+			}
 		}
-*/
+
 		function criptografar() {
 
 			const textoOriginal = input.value;
@@ -62,7 +67,7 @@
 		function mostraCriptografar() {
 
 			resultado.value = criptografar();
-		//	sumirPlaceholder();
+			trocarVisibilidadePlaceholderBotaoCopiar()
 
 		}
 
@@ -83,7 +88,7 @@
 		function mostraDescriptografar() {
 
 			resultado.value = descriptografar();
-		//	sumirPlaceholder();
+			trocarVisibilidadePlaceholderBotaoCopiar()
 
 		}
 

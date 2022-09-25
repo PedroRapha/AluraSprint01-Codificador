@@ -46,16 +46,34 @@
 			var vogalDestino = ["enter" , "imes" , "ai" ,  "ober" , "ufat"]
 
 			for (var posicao = 0; posicao <= 4; posicao++) {
-				textoCriptografado = textoCriptografado.replace(vogalOrigem[posicao], vogalDestino[posicao]);
+				textoCriptografado = textoCriptografado.replaceAll(vogalOrigem[posicao], vogalDestino[posicao]);
 			}
 			return textoCriptografado;
 		}
 
-		//O código já encripta a primeira letra. Preciso descobrir como encriptar várias de uma vez e também fazer a figura sumir quando tem texto
-
-		function preencheResultado() {
+		function mostraCriptografar() {
 
 			resultado.value = criptografar();
+
+		}
+
+		function descriptografar() {
+
+			const textoOriginal = input.value;
+			var textoDescriptografado = textoOriginal;
+
+			var vogalOrigem = ["enter" , "imes" , "ai" ,  "ober" , "ufat"]
+			var vogalDestino = ["e" , "i" , "a" , "o" , "u"]
+
+			for (var posicao = 0; posicao <= 4; posicao++) {
+				textoDescriptografado = textoDescriptografado.replaceAll(vogalOrigem[posicao], vogalDestino[posicao]);
+			}
+			return textoDescriptografado;
+		}
+
+		function mostraDescriptografar() {
+
+			resultado.value = descriptografar();
 
 		}
 
@@ -64,17 +82,9 @@
 		var botaoCriptografa = document.querySelector("#botaoCriptografar");
 		var botaoDescriptografa = document.querySelector("#botaoDescriptografar");
 		
-		botaoCriptografa.onclick = preencheResultado;
+		botaoCriptografa.onclick = mostraCriptografar;
+		botaoDescriptografa.onclick = mostraDescriptografar;
 		
-
-		/*
-	As "chaves" de criptografia que utilizaremos são:
-		`A letra "e" é convertida para "enter"`
-		`A letra "i" é convertida para "imes"`
-		`A letra "a" é convertida para "ai"`
-		`A letra "o" é convertida para "ober"`
-		`A letra "u" é convertida para "ufat"`
-	*/
 	</script>
 
 	<footer>

@@ -110,7 +110,7 @@ label {
 	color: #495057;
 }
 
-.elementos-resultado {
+.elementosResultado {
 	position: absolute;
 	width: 28vw;
 	margin: auto 0 auto;
@@ -118,14 +118,14 @@ label {
 	right: 40px;
 }
 
-.elementos-resultado img {
+.elementosResultado img {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto 2em auto;
 	width: 20vw;
 }
 
-.elementos-resultado h2 {
+.elementosResultado h2 {
 	text-align: center;
 	line-height: 120%;
 	font-size: 1.5em;
@@ -133,10 +133,16 @@ label {
 	color: #343A40;
 }
 
-.elementos-resultado p {
+.elementosResultado p {
 	text-align: center;
 	margin: 1em 2em 0 2em;
 	line-height: 120%;
+}
+
+#botaoCopiar {
+	position: absolute;
+	margin-top: -4.5em;
+	right: calc(40px + 1vw);
 }
 
 

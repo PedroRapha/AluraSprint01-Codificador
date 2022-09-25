@@ -28,15 +28,23 @@
 
 		<div class="caixa-resultado">
 			<textarea class="textarea-resultado" readonly></textarea>
-			<div class="elementos-resultado">
+			<div class="elementosResultado">
 				<img src="elements/imagem-sem-texto.png">
 				<h2>Nenhuma mensagem encontrada</h2>
 				<p>Digite um texto que você deseja criptografar ou descriptografar</p>
 			</div>
 		</div>
+
+		<input type="button" id="botaoCopiar" value="Copiar" class="botao">
 	</main>
 
 	<script>
+/*		function sumirPlaceholder() {
+
+			document.getElementsByClassName('elementosResultado').style.visibility = 'hidden';
+			
+		}
+*/
 		function criptografar() {
 
 			const textoOriginal = input.value;
@@ -54,6 +62,7 @@
 		function mostraCriptografar() {
 
 			resultado.value = criptografar();
+		//	sumirPlaceholder();
 
 		}
 
@@ -74,6 +83,7 @@
 		function mostraDescriptografar() {
 
 			resultado.value = descriptografar();
+		//	sumirPlaceholder();
 
 		}
 

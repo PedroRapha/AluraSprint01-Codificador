@@ -168,4 +168,47 @@ footer {
 	font-size: 0.5em;
 	color: gray;
 	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* Stilo para dispositivos móveis
+Tablets*/
+
+@media screen and (max-width: 480px) {
+	main {
+		margin: 40px 40px 40px 40px;
+	}
+
+	.input-usuario {
+	display: block;
+	width: calc(100% - 30px);
+	height: 50vh;
+	padding: 0.5em;
+	}
+
+	.botao {
+	display: inline-block;
+	width: calc(50%);
+	padding: 1.5em;
+	margin: 0;
+	}
+
+/*	.textarea-resultado {
+		position: relative;
+		width: calc(100% - 40px);;
+		height: auto;
+		top: 1em;
+	}
+
+	.elementosResultado img {
+		display: none;
+	}
+	.elementosResultado {
+		visibility: visible;
+		position: static;
+		width: calc(100% - 40px);
+		margin: auto 0 auto;
+		top: auto;
+	}
+
 }

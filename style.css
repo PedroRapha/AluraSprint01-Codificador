@@ -273,3 +273,9 @@ celulares*/
 	}
 
 }
+
+@media screen and (max-height: 600px) {
+	.elementosResultado img {
+		display: none;
+	}
+}

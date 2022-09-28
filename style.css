@@ -199,7 +199,7 @@ Tablets*/
 
 	.textarea-resultado {
 		position: static;
-		width: calc(100% - 30px);;
+		width: calc(100% - 30px);
 		min-height: 20vh;
 		height: auto;
 		margin-top: 2em;
@@ -221,7 +221,7 @@ Tablets*/
 }
 
 /* Style para dispositivos móveis
-celulares
+celulares*/
 
 @media screen and (max-width: 480px) {
 	main {
@@ -237,9 +237,13 @@ celulares
 
 	.botao {
 	display: inline-block;
-	width: calc(50%);
+	width: calc(100%);
 	padding: 1.5em;
 	margin: 0;
+	}
+
+	#botaoDescriptografar {
+		margin-top: 1em;
 	}
 
 	.caixa-resultado {
@@ -248,7 +252,7 @@ celulares
 
 	.textarea-resultado {
 		position: static;
-		width: calc(100% - 30px);;
+		width: calc(100% - 30px);
 		min-height: 20vh;
 		height: auto;
 		margin-top: 2em;

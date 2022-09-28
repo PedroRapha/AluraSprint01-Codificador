@@ -171,8 +171,57 @@ footer {
 	margin-bottom: 10px;
 }
 
-/* Stilo para dispositivos móveis
+/* Style para dispositivos móveis
 Tablets*/
+
+@media screen and (max-width: 600px) {
+	main {
+		margin: 40px 40px 40px 40px;
+	}
+
+	.input-usuario {
+	display: block;
+	width: calc(100% - 30px);
+	height: 50vh;
+	padding: 0.5em;
+	}
+
+	.botao {
+	display: inline-block;
+	width: calc(50%);
+	padding: 1.5em;
+	margin: 0;
+	}
+
+	.caixa-resultado {
+		position: relative;
+	}
+
+	.textarea-resultado {
+		position: static;
+		width: calc(100% - 30px);;
+		min-height: 20vh;
+		height: auto;
+		margin-top: 2em;
+	}
+
+	.elementosResultado img {
+		display: none;
+	}
+	.elementosResultado {
+		visibility: visible;
+		position: absolute;
+		width: calc(100% - 30px);
+		left: auto;
+		right: auto;
+		top: 3em;
+		margin: 2em auto 0 0.5em;
+	}
+
+}
+
+/* Style para dispositivos móveis
+celulares
 
 @media screen and (max-width: 480px) {
 	main {
@@ -193,11 +242,16 @@ Tablets*/
 	margin: 0;
 	}
 
-/*	.textarea-resultado {
+	.caixa-resultado {
 		position: relative;
-		width: calc(100% - 40px);;
+	}
+
+	.textarea-resultado {
+		position: static;
+		width: calc(100% - 30px);;
+		min-height: 20vh;
 		height: auto;
-		top: 1em;
+		margin-top: 2em;
 	}
 
 	.elementosResultado img {
@@ -205,10 +259,12 @@ Tablets*/
 	}
 	.elementosResultado {
 		visibility: visible;
-		position: static;
-		width: calc(100% - 40px);
-		margin: auto 0 auto;
-		top: auto;
+		position: absolute;
+		width: calc(100% - 30px);
+		left: auto;
+		right: auto;
+		top: 3em;
+		margin: 2em auto 0 0.5em;
 	}
 
 }

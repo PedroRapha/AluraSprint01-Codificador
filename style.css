@@ -254,7 +254,7 @@ celulares*/
 	.textarea-resultado {
 		position: static;
 		width: calc(100% - 30px);
-		min-height: 20vh;
+		min-height: 25vh;
 		height: auto;
 		margin-top: 2em;
 	}

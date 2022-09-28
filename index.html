@@ -16,29 +16,32 @@
 
 <body>
 	<header class="logo-header">
-			<h1 class="logo-topo"><img src="elements/logo.png"></h1>
+			<h1 class="logo-topo"><img src="elements/logo.png" alt="logo da Alura"></h1>
 	</header>
 	<main>
-		<textarea class="input-usuario" placeholder="Digite seu texto"></textarea>
-
-		<div class="label-do-botao">
-			<img src="elements/exclamacao.png">
-			<label for="botao-criptografar">Apenas letras minúsculas e sem acento.</label>
-		</div>
-		<input type="button" id="botaoCriptografar" value="Criptografar" class="botao"><input type="button" id="botaoDescriptografar" value="Descriptografar" class="botao">
-
-		<div class="caixa-resultado">
-			<textarea class="textarea-resultado" readonly></textarea>
-			<div class="elementosResultado" id="elementos-resultado">
-				<img src="elements/imagem-sem-texto.png">
-				<h2>Nenhuma mensagem encontrada</h2>
-				<p>Digite um texto que você deseja criptografar ou descriptografar</p>
+		<section>
+			<textarea class="input-usuario" placeholder="Digite seu texto"></textarea>
+			
+			<div class="label-do-botao">
+				<img src="elements/exclamacao.png">
+				<label for="botao-criptografar">Apenas letras minúsculas e sem acento.</label>
 			</div>
-		</div>
+			<input type="button" id="botaoCriptografar" value="Criptografar" class="botao"><input type="button" id="botaoDescriptografar" value="Descriptografar" class="botao">
+		</section>
 
-		<input type="button" id="botaoCopiar" value="Copiar" class="botao">
-	</main>
+		<section>
+			<div class="caixa-resultado">
+				<textarea class="textarea-resultado" readonly></textarea>
+				<div class="elementosResultado" id="elementos-resultado">
+					<img src="elements/imagem-sem-texto.png">
+					<h2>Nenhuma mensagem encontrada</h2>
+					<p>Digite um texto que você deseja criptografar ou descriptografar</p>
+				</div>
+			</div>
 
+			<input type="button" id="botaoCopiar" value="Copiar" class="botao">
+		</main>
+		</section>
 	<script>
 		function trocarVisibilidadePlaceholderBotaoCopiar() {
 
